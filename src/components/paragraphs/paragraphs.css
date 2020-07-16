@@ -1,0 +1,41 @@
+a {
+  color: black;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  line-height: 1.3em;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  background: rgba(67, 121, 255, 0.5);
+  display: inline-block;
+  height: 0.4em;
+  width: 100%;
+  padding: 0 2px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: -1;
+  transition: 0.4s;
+}
+
+a:hover:after {
+  height: 1.25em;
+  transform: translateX(-50%);
+}
+
+p {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.hyper {
+  position: relative;
+}

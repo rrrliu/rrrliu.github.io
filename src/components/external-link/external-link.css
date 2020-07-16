@@ -1,0 +1,14 @@
+.logo {
+  height: 18px;
+  opacity: 0.5;
+  margin-right: 12px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in;
+}
+
+a::after {
+  background: transparent;
+}

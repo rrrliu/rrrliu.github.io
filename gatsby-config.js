@@ -1,8 +1,12 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Richard Liu`,
+    description: `My little corner of the internet.`,
+    author: `@rrrliu`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,11 +28,34 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/richard-circle.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: 'gatsby-source-airtable',
+      options: {
+        apiKey: process.env.AIRTABLE_API_KEY,
+        tables: [
+          {
+            baseId: 'appI9URAQRMcLQlgu',
+            tableName: 'Introduction',
+            tableView: 'Grid view',
+          },
+          {
+            baseId: 'appI9URAQRMcLQlgu',
+            tableName: 'Hyperlinks',
+            tableView: 'Grid view',
+          },
+          {
+            baseId: 'appI9URAQRMcLQlgu',
+            tableName: 'Titles',
+            tableView: 'Grid view',
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
