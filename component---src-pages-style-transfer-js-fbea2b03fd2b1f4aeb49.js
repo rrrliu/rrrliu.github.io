@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{nduV:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Wbzz"),o=n("vrFN");t.default=function(){return l.a.createElement(l.a.Fragment,null,l.a.createElement(o.a,{title:"A neural algorithm of artistic style"}),l.a.createElement("h1",null,"A Neural Algorithm of Artistic Style"),l.a.createElement("p",null,"Coming soon!"),l.a.createElement(r.Link,{to:"/"},"Go back to the homepage"))}}}]);
+//# sourceMappingURL=component---src-pages-style-transfer-js-fbea2b03fd2b1f4aeb49.js.map
