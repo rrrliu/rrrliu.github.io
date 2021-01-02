@@ -41,7 +41,10 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "cname": "echo \"richardliu.me\" > public/CNAME",
+    "predeploy": "rm -rf node_modules/.cache/gh-pages",
+    "deploy": "gh-pages -d public",
+    "publish-website": "yarn build && yarn cname && yarn deploy"
   },
   "repository": {
     "type": "git",
