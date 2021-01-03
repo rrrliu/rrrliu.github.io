@@ -1,6 +1,4 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+require('dotenv').config();
 
 module.exports = {
   siteMetadata: {
@@ -37,17 +35,17 @@ module.exports = {
         apiKey: process.env.AIRTABLE_API_KEY,
         tables: [
           {
-            baseId: 'appI9URAQRMcLQlgu',
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: 'Introduction',
             tableView: 'Grid view',
           },
           {
-            baseId: 'appI9URAQRMcLQlgu',
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: 'Hyperlinks',
             tableView: 'Grid view',
           },
           {
-            baseId: 'appI9URAQRMcLQlgu',
+            baseId: process.env.AIRTABLE_BASE_ID,
             tableName: 'Titles',
             tableView: 'Grid view',
           },
