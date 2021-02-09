@@ -1,22 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
-
 .intro-container {
-  margin: 3vh auto;
-}
-
-body {
-  background: #fafafa;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
+  margin: 0 auto;
+  max-width: 760px;
 }
 
 .title {
   position: relative;
   display: inline-block;
-  max-width: 760px;
   font-family: 'Amiri', 'Georgia', serif;
   font-style: normal;
   font-weight: bold;
@@ -39,83 +28,18 @@ body {
   /* margin-right: 16px; */
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .paragraphs {
   margin-top: 16px;
   font-family: 'Open Sans', 'Lato', 'Avenir Next', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  max-width: 760px;
   line-height: 20px;
   color: #696969;
 }
 
 .logos-section {
   margin-top: 10px;
-  max-width: 760px;
 }
 
 @media (min-width: 760px) {

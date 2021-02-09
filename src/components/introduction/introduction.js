@@ -10,6 +10,7 @@ import styled from 'styled-components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './introduction.css';
 import { useStaticQuery, graphql } from 'gatsby';
+import Layout from '../layout';
 
 function Introduction() {
   useEffect(() => {
@@ -102,23 +103,31 @@ function Introduction() {
   };
 
   return (
-    <Container className="intro-container h-100" fluid>
-      <Row className="justify-content-md-center align-items-center">
-        <Col className="title">{parseTitle()}</Col>
-      </Row>
-      <Paragraphs parseParagraphForLinks={parseParagraphForLinks} />
-      <Row className="justify-content-md-center align-items-center">
-        <Col className="logos-section">
-          {externalLinks.map(link => (
-            <ExternalLink
-              url={link.URL}
-              logoUrl={link.Logo[0].url}
-              text={link.Text}
-            />
-          ))}
-        </Col>
-      </Row>
-    </Container>
+    <Layout>
+      <Container className="intro-container h-100" fluid>
+        <Row className="justify-content-md-center align-items-center">
+          <Col className="title">{parseTitle()}</Col>
+        </Row>
+
+        <Row className="justify-content-md-center align-items-center">
+          <Col className="paragraphs">
+            <Paragraphs parseParagraphForLinks={parseParagraphForLinks} />
+          </Col>
+        </Row>
+
+        <Row className="justify-content-md-center align-items-center">
+          <Col className="logos-section">
+            {externalLinks.map(link => (
+              <ExternalLink
+                url={link.URL}
+                logoUrl={link.Logo[0].url}
+                text={link.Text}
+              />
+            ))}
+          </Col>
+        </Row>
+      </Container>
+    </Layout>
   );
 }
 

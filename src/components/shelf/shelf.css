@@ -1,0 +1,9 @@
+.plain-link,
+.plain-link:hover {
+  text-decoration: underline;
+  color: #212529;
+}
+
+.plain-link:hover {
+  opacity: 0.65;
+}
