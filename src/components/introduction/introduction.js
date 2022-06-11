@@ -29,7 +29,7 @@ function Introduction() {
     return processed_links;
   };
 
-  const title = ['Hey there!', "I'm Richard."];
+  const title = ['Hey,', "I'm Richard."];
 
   const allLinks = useStaticQuery(graphql`
     query {
