@@ -64,12 +64,13 @@ function Introduction() {
       };
 
       const Hyperlink = styled.a`
-        color: rgb(10, 10, 10);
+        color: rgb(64, 64, 64);
+        font-weight: 600;
         :after {
           background: ${link.color};
         }
         :hover {
-          color: rgb(10, 10, 10);
+          color: rgb(64, 64, 64);
           text-decoration: none;
         }
       `;
