@@ -30,7 +30,8 @@
 
 .paragraphs {
   margin-top: 16px;
-  font-family: 'Open Sans', 'Lato', 'Avenir Next', sans-serif;
+  font-family: 'Georgia', serif;
+  /* font-family: 'Open Sans', 'Lato', 'Avenir Next', sans-serif; */
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

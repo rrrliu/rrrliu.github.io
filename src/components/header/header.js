@@ -13,9 +13,9 @@ const Header = () => (
         padding: `1.45rem 1.0875rem 0`,
       }}
     >
-      <HeaderLink to="/">About</HeaderLink>
+      {/* <HeaderLink to="/">About</HeaderLink>
       <HeaderLink to="/shelf">Shelf</HeaderLink>
-      <HeaderLink to="/projects">Projects</HeaderLink>
+      <HeaderLink to="/projects">Projects</HeaderLink> */}
     </div>
   </header>
 );
